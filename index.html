@@ -9,6 +9,20 @@
         <script src="https://cdn.tailwindcss.com"></script>
     <!-- awesome font/icon -->
         <script src="https://kit.fontawesome.com/7b10c6430f.js" crossorigin="anonymous"></script>
+    <!-- customize color -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                
+                'bg-sweetred': '#F85559',
+                
+              }
+            }
+          }
+        }
+      </script>
     <!-- google font -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,9 +35,58 @@
         </style>
 
 </head>
-<body class="font-family: 'Lato', sans-serif;">
-    <header>
-        
+<body class=".lato-font">
+    <header class="class= max-w-screen-2xl mx-auto px-5 md:px-20 lg:px-36 my-12">
+        <!-- nav section -->
+        <section >
+            <div class="navbar bg-[#F85559] rounded-full">
+                <div class="navbar-start">
+                  <div class="dropdown ">
+                    <label tabindex="0" class="btn btn-ghost btn-circle lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+                    </label>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-red-200 rounded-box w-52">
+                      <li><a>Home</a></li>
+                      <li><a>About Us</a></li>
+                      <li><a>Shop</a></li>
+                      <li><a>All Fruits</a></li>
+                    </ul>
+                  </div>
+
+                  
+                  <div class="hidden sm:block md:hidden lg:flex "><ul class="menu menu-horizontal text-white text-lg font-medium px-1">
+                    <li><a>Home</a></li>
+                      <li><a>About Us</a></li>
+                      <li><a>Shop</a></li>
+                      <li><a>All Fruits</a></li>
+                  </ul></div>
+
+
+
+                </div>
+                <div class="btn btn-ghost navbar-center gap-2">
+                    <img class="w-10 h-12" src="./images/logo.png" alt="">
+                    <h3 class="normal-casel text-white font-bold text-xl md:text-2xl lg:4xl">Fruit Burst</h3>
+                </div>
+                <div class="navbar-end">
+                    <div class="hidden sm:block">  <!-- This div will be hidden on small devices -->
+                
+                        <div class=" px-5 py-2 ">
+                            <div class="flex items-center">
+                                <!-- Search Bar -->
+                                <div class="relative">
+                                  <input type="text" class="rounded-full py-2 px-3 pl-10 bg-white text-gray-800 focus:outline-none focus:shadow-outline" placeholder="Search Here">
+                                  <span class="absolute top-0 right-0 mt-2 mr-3">       
+                                    <i class="fa-solid fa-magnifying-glass"></i>                    
+                                  </span>
+                                </div>
+                              </div>
+                        </div>
+    
+                      </div>
+                </div>
+              </div>
+        </section>
     </header>
 
     <main></main>
