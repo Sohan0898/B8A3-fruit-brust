@@ -39,11 +39,11 @@
     <header class="class= max-w-screen-2xl mx-auto px-5 md:px-20 lg:px-36 my-14">
         <!-- nav section -->
         <section >
-            <div class="navbar bg-[#F85559] rounded-full">
-                <div class="navbar-start">
-                  <div class="dropdown ">
+            <div class="navbar flex justify-between  flex-row-reverse bg-white md:bg-[#F85559] rounded-full">
+                <div class=" md:navbar-start md:order-last">
+                  <div class="dropdown dropdown-bottom dropdown-end">
                     <label tabindex="0" class="btn btn-ghost btn-circle lg:hidden">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+                       <span class="text-2xl"> <i class="fa-solid fa-bars"></i></span>
                     </label>
                     <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-red-200 rounded-box w-52">
                       <li><a>Home</a></li>
@@ -64,15 +64,15 @@
 
 
                 </div>
-                <div class="btn btn-ghost navbar-center gap-2">
+                <div class="btn btn-ghost order-1  lg:navbar-center  gap-2">
                     <img class="w-10 h-12" src="./images/logo.png" alt="">
-                    <h3 class="normal-casel text-white font-bold text-xl md:text-2xl lg:4xl">Fruit Burst</h3>
+                    <h3 class="normal-casel text-[#121212] md:text-white font-bold text-2xl md:text-2xl lg:4xl">Fruit Burst</h3>
                 </div>
-                <div class="navbar-end">
+                <div class="md:navbar-end md:order-first">
                     <div class="hidden sm:block">  <!-- This div will be hidden on small devices -->
                 
                         <div class=" px-5 py-2 ">
-                            <div class="flex items-center">
+                            <div class="flex items-center ">
                                 <!-- Search Bar -->
                                 <div class="relative">
                                   <input type="text" class="rounded-full py-2 px-3 pl-10 bg-white text-gray-800 focus:outline-none focus:shadow-outline" placeholder="Search Here">
